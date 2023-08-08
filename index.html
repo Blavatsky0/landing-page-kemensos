@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Kemensos RI</title>
+  </head>
+
+  <body>
+
+    <!--Navbar-->
+    <nav class="container mx-auto px-4 py-5">
+      <div class="flex flex-col md:flex-row justify-between md:items-center gap-5">
+        <div class="flex flex-wrap md:items-center justify-between text-sm md:gap-5">
+          <a href="index.html"><img src="./images/kemensaos.png" class="h-16" /></a>
+          <button onclick="toggleNavbar()" class="md:hidden block bg-gray-50 focus:ring-2 focus:ring-gray-200 p-4 text-gray-600 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+          <div id="navbar" class="hidden mt-5 md:mt-0 md:block w-full md:w-auto">
+            <ul class="p-3 rounded-lg flex rounded-lg bg-white md:bg-transparent md:space-x-8 border md:border-none flex-col md:flex-row">
+              <li class="px-4 py-2 md:p-0 font-bold md:text-cyan-600 md:bg-transparent bg-sky-500 text-white
+              rounded-lg">Beranda</li>
+              <li class="px-4 py-2 md:p-0">Profil</li>
+              <li class="px-4 py-2 md:p-0">Jadwal</li>
+              <li class="px-4 py-2 md:p-0">Infografis</li>
+              <li class="px-4 py-2 md:p-0">Layanan Publik</li>
+            </ul>
+          </div>
+        </div>
+        <div id="auth" class="hidden md:block bg-white rounded-lg border py-2 px-4 text-sm">
+          <a href="index.html" class="text-sky-700 py-2 px-4"> <i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        </div>
+      </div>
+    </nav>
+    
+    <!--Akhir Navbar-->
+
+    <!--Header-->
+    <header class="container mx-auto px-4 py-10b">
+      <div class="flex flex-col md:flex-row items-center gap-5 md:gap-14">
+        <!--Information-->
+        <div class="w-full md:w-3/5 space-y-5">
+          <h1 class="font-bold text-gray-800 text-5xl md:text-6xl">Kementrian <br>Sosial <span class="text-sky-600">Republik<br/>Indonesia</span></h1>
+          <p class="text-base md:text-xl text-grey-700">Sebuah lembaga pemerintah di Indonesia yang bertanggung jawab atas urusan<br> sosial dan kesejahteraan rakyat </p>
+          <div class="flex flex-wrap item-center justify-center">
+            <div class="w-1/2 flex gap-2 mb-3">
+              <span class="mt-0 text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h5 class="font-bold text-gray-800">Humanism</h5>
+                <p class="text-gray-700 text-sm">Selalu menggunakan pendekatan<br> Humanism ketika bekerja.</p>
+              </div>
+            </div>
+
+            <div class="w-1/2 flex gap-2 mb-3">
+              <span class="mt-0 text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h5 class="font-bold text-gray-800">Adaptif</h5>
+                <p class="text-gray-700 text-sm">Program kerja dirancang agar mudah <br> disegala kondisi.</p>
+              </div>
+            </div>
+            
+            <div class="w-1/2 flex gap-2 mb-3">
+              <span class="mt-0 text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h5 class="font-bold text-gray-800">Dedikatif</h5>
+                <p class="text-gray-700 text-sm">SDM Kemensos senantiasa bekerja<br>penuh dedikasi, tidak sekedar business<br>as usual</p>
+              </div>
+            </div>
+            
+            <div class="w-1/2 flex gap-2 mb-3">
+              <span class="mt-0 text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h5 class="font-bold text-gray-800">Inklusif</h5>
+                <p class="text-gray-700 text-sm">Dalam bekerja dalam konsep<br>melibatkan semua stakeholders.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/2 flex gap-2 mb-3">
+            <span class="mt-0 text-emerald-700"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <h5 class="font-bold text-gray-800">Responsif</h5>
+              <p class="text-gray-700 text-sm">Seluruh Program dan SDM dalam<br>bekerja harus memiliki sense of urgency<br>yang tinggi berupaya untuk bisa<br>Responsif</p>
+            </div>
+          </div>
+      </div>
+      <!--Akhir Informasi-->
+      <div class="w-full md:w-2/5 shadow-xl border border-gray-100 rounded-xl p-5 bg-white text-center space-y-4">
+        <h4 class="font-bold">Cek Bantuan Sosial Disini</h4>
+        <div class="flex flex-col items-center justify-center gap-3">
+          <label class="text-gray-600 text-sm">Nomor Induk Kependudukan</label>
+          <input class="w-full md:w3/4 text-sm px-4 py-2 bg-gray-50 border border-gray-200 text-gray-800 rounded-lg" placeholder="Isi nomor Induk Kependudukan disini...">
+          <button class="w-full md:w3/4 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 rounded-lg text-white text-dm"><i class="fa-solid fa-magnifying-glass"></i> Cari Sekarang</button>
+          <div class="w-full md:w-3/4 flex text-left text-gray-600 gap-3">
+            <span class="mt-0"><i class="fa-solid fa-certificate"></i></span>
+            <p class="text-5">Website ini hanya digunakan untuk praktek mata kuliah Web Development di Universitas Amorfati , Balkh, Afghanistan tahun 1207. Oleh <b class="font bold">Alif Dwi Rahman</b></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Akhir Header-->
+
+    <script>
+      function toggleNavbar() {
+        var navbar = document.getElementById("navbar");
+        var auth = document.getElementById("auth");
+        navbar.classList.toggle("hidden");
+        auth.classList.toggle("hidden");
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>
